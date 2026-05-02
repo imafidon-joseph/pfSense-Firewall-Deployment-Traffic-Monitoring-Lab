@@ -1,4 +1,4 @@
-# pfSense Firewall Deployment Traffic Monitoring Lab
+# Network Security Monitoring Lab: pfSense Firewall, Suricata IDS, and Splunk SIEM Integration
 
 
 # Project Overview
