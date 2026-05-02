@@ -2,18 +2,22 @@
 
 
 # Project Overview
-This project demonstrates the deployment and configuration of a firewall using pfSense to monitor, control, and analyze network traffic in a controlled lab environment.
+This project demonstrates the deployment of a layered network security lab integrating a pfSense firewall, Suricata IDS, and Splunk SIEM. A firewall was configured to enforce traffic control through custom block rules, while Suricata monitored and detected suspicious activities such as network scans. The generated logs were forwarded to Splunk for centralized analysis, enabling effective threat detection and investigation. This setup reflects real-world SOC workflows involving firewall management, intrusion detection, and SIEM-based monitoring.
 
-The objective was to simulate real-world network security operations by implementing firewall rules, generating traffic, and analyzing logs as a Security Operations Center (SOC) analys
+The objective is to simulate real-world network security operations by implementing firewall rules, generating traffic, and analyzing logs as a Security Operations Center (SOC) analys
 
 # Objectives
 
-* Deploy and configure pfSense firewall
-* Implement network segmentation
-* Create and enforce firewall rules
+* Deploy and configure a pfSense firewall
+* Implement network segmentation and traffic control
+* Create and enforce firewall block rules
+* Set up Suricata IDS for real-time intrusion detection
+* Detect network attacks such as Nmap scanning
+* Forward and centralize logs using Splunk SIEM
+* Monitor and analyze security events from Suricata logs
 * Simulate attacker behavior using Kali Linux
-* Monitor and analyze traffic logs
-* Understand real-world firewall operations
+* Investigate alerts and understand threat patterns
+* Gain hands-on experience with real-world SOC workflows
 
 # Lab Architecture
 
@@ -25,10 +29,13 @@ The objective was to simulate real-world network security operations by implemen
 
 # Tools & Environment
 
-* pfSense Firewall
-* Kali Linux (Attacker)
-* Target Machine (Victim system)
-* VirtualBox (virtualization environment)
+* pfSense Firewall (Network security and traffic filtering)
+* Suricata IDS/IPS (Intrusion detection and monitoring)
+* Splunk SIEM (Log collection, analysis, and visualization)
+* Kali Linux (Attacker machine for simulation)
+* Target Machine (Victim system for testing)
+* VirtualBox (Virtualization environment)
+* Nmap (Network scanning and reconnaissance tool)
 
 # pfSense Installation
 
